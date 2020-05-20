@@ -1,14 +1,14 @@
-md5: 18b7e0fe864083cd414c956c3f17a71a
+md5: 89b0971068a87a971910630bc7bdb7a9
 cmd: python3 src/evaluate.py model.pickle data/prepared/valid.csv auc.score
 deps:
 - md5: 67f6afab6f8c054d535907d85d7b810b
   path: src/evaluate.py
-- md5: c8fb088d5e3a5617d11f2d2ab53c20b0
+- md5: f83da88d7bb9eee03cdec385d2db5472
   path: model.pickle
 - md5: 086a27dc81ed986ea83bcbb3a94ecb83
   path: data/prepared/valid.csv
 outs:
-- md5: 8620ee671286ff76aff9537c6be8b8d1
+- md5: e63b7f6703f67d05ec87ba0b25d2b8d5
   path: auc.score
   cache: false
   metric: true
