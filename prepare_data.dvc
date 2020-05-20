@@ -1,14 +1,12 @@
-md5: e14a89dd2ccec3c8ce7ddab3caaeae43
-cmd: python3 src/prepare_data.py data/train.csv data/test.csv
+md5: d8082d0f56dc80a8862a7d2ce87cc6d8
+cmd: python3 src/prepare_data.py data/train.csv
 deps:
-- md5: 25bb3b5e06b5c5471288f599f1eb939c
+- md5: 0329ab7fd29b4d1e9d49b982e22fcafc
   path: src/prepare_data.py
 - md5: 61fdd54abdbf6a85b778e937122e1194
   path: data/train.csv
-- md5: 029c9cd22461f6dbe8d9ab01def965c6
-  path: data/test.csv
 outs:
-- md5: 8c32845f0a71e6085c63597370f26fac.dir
+- md5: 4215a53463df0136943b48c797517579.dir
   path: data/prepared
   cache: true
   metric: false

@@ -1,0 +1,13 @@
+md5: 840199ea45f29cfb4015228d41ee8329
+cmd: python3 src/train_model.py data/prepared/train.csv
+deps:
+- md5: a72e9137d5ba9a487c9f39eecd459aa7
+  path: src/train_model.py
+- md5: b2130b37a7571e69cdf3172883943720
+  path: data/prepared/train.csv
+outs:
+- md5: c8fb088d5e3a5617d11f2d2ab53c20b0
+  path: model.pickle
+  cache: true
+  metric: false
+  persist: false
