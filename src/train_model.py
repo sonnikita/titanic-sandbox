@@ -20,7 +20,7 @@ used_cols = [
 
 target = ['Survived', ]
 
-model = RandomForestClassifier(n_estimators=1200)
+model = RandomForestClassifier(n_estimators=2400)
 model.fit(train_df[used_cols], train_df[target[0]])
 
 with open('model.pickle', 'wb') as model_file:
