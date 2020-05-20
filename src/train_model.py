@@ -3,7 +3,7 @@ import os
 import pickle
 import sys
 
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 
 if len(sys.argv) != 2:
     sys.stderr.write('Arguments error. Usage:\n')
@@ -20,7 +20,7 @@ used_cols = [
 
 target = ['Survived', ]
 
-model = LogisticRegression(C=2.0)
+model = RandomForestClassifier(n_estimators=300)
 model.fit(train_df[used_cols], train_df[target[0]])
 
 with open('model.pickle', 'wb') as model_file:
